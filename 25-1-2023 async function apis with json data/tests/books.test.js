@@ -18,7 +18,7 @@ describe(' books', () => {
             id: expect.any(Number)
         })]))
     });
-    test('POST /api/books - errors', async() => {
+    test('POST books - errors', async() => {
 
         const { body, statusCode } = await request(app).post('/api/books').send({
             name: "sushma",
