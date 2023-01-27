@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 
 router.post(
     '/', [
-        check('name', 'Book name is required').not().isEmpty(),
+        check('name', 'Bookname is required').not().isEmpty(),
         check('author', 'author name is required').not().isEmpty()
     ],
     (req, res) => {
